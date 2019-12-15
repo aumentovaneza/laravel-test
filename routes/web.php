@@ -11,16 +11,20 @@
 |
 */
 
-Route::view('/', 'welcome');
+Auth::routes();
 
-Route::get('products', 'ProductController@indx');
+Route::get('/', function(){
+  return View::make('welcome');
+})->middleware('auth');
+
+Route::get('products', 'ProductController@index');
 
 Route::get('cart/{id}', 'ProductController@cart')->name('cart');
 
 Route::get('checkout', 'ProductController@checkout')->name('checkout');
 
-Route::post('specials', 'ProductController@specials');
-
-Auth::routes();
+Route::get('specials', 'ProductController@specials');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('review','ReviewController');
