@@ -29,12 +29,12 @@ Again, there isn't anything "tricky" about this repo, the application should run
 - [x] Make it so users must validate their email address before they are able to log in.
 - [x] If you haven't already done so, `seed` your database with data.
 - [ ] Create an API Endpoint that generates a JSON response of all Products.
-- [ ] Create a new branch in your repo and call it `tailwind`. On this branch, upgrade the site to use TailwindCSS.
+- [x] Create a new branch in your repo and call it `tailwind`. On this branch, upgrade the site to use TailwindCSS.
 
 ## Advanced Tasks
 
 - [ ] Sign your commits using a GPG key.
-- [ ] When adding additional items to the cart of something that had already been added, it is only registering a quantity of 1. Fix this.
+- [x] When adding additional items to the cart of something that had already been added, it is only registering a quantity of 1. Fix this.
 - [ ] Add VueJS to project and make the `Add to cart` a Vue Component that keeps you on the page when adding products to your cart.
 - [ ] Upgrade the IDs for products to be UUIDs. Assure everything still works, adding to cart, purchase, and reviews.
 - [ ] Add a pivot table to allow users to leave comments of products. No need to create the interfaces with this, as long as it works in tinker.
